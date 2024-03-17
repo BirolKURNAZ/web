@@ -1,0 +1,25 @@
+body{
+    background-color: rgb(26, 25, 25);
+    margin: auto;
+
+    }
+
+h1{
+    color: wheat;
+    text-align: center;
+    font-size: 64px;
+    }
+
+h2{
+    color: wheat;
+    }
+
+p{
+    font-family: "roboto";
+    font-size: 18px;
+    color: wheat;
+    } 
+
+article {
+  text-align: center;
+}
