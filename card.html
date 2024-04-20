@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        :root {
+            --bg-color: rgb(32, 30, 30);
+            --text-color: rgb(70, 64, 13);
+            --border-color: #faa108;
+            --shadow-color: rgba(246, 168, 1, 0.15);
+            --button-bg-color: #20be08;
+            --button-text-color: rgb(208, 245, 20);
+        }
+
+        body {
+            background-color: var(--bg-color);
+        }
+
+        .card-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            height: 800px;
+            width: auto;
+        }
+
+        .card {
+            font-size: 25px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 25px auto;
+            background-color: var(--border-color);
+            border-radius: 15px;
+            box-shadow: 0 4px 8px var(--shadow-color);
+            width: 300px;
+            height: 400px;
+            float: left;
+        }
+
+        .card-station,
+        .card-logo,
+        .card-stream,
+        .card-go {
+            padding: 8px;
+        }
+
+        .card-station {
+            color: var(--text-color);
+        }
+
+        .card-logo {
+            text-align: center;
+        }
+
+        .card-go {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .card-buttons {
+            display: flex;
+            gap: 20px;
+            margin: 20px auto;
+            width: 100%;
+            height: 50px;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            border-radius: 15px;
+            width: 100px;
+            height: 30px;
+            text-align: center;
+            border: none;
+            cursor: pointer;
+            font-size: 20px;
+            color: var(--button-text-color);
+            font-weight: 700;
+            float: left;
+        }
+
+        .card-stream {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .stream-copy,
+        .stream-go {
+            display: flex;
+            gap: 20px;
+            margin: 20px auto;
+            width: 100%;
+            height: 50px;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            border-radius: 15px;
+            background-color: var(--button-bg-color);
+            box-shadow: 0 4px 8px var(--shadow-color);
+            width: 100px;
+            height: 30px;
+            text-align: center;
+            border-radius: 15px;
+            border: none;
+            cursor: pointer;
+            font-size: 20px;
+            color: var(--text-color);
+            font-weight: 700;
+            float: left;
+        }
+
+        .stream-copy button {
+            background-color: var(--button-bg-color);
+            height: 30px;
+            width: 100px;
+            text-align: center;
+            border-radius: 15px;
+            color: var(--button-text-color);
+        }
+
+        .stream-go button {
+            background-color: var(--button-bg-color);
+            height: 30px;
+            width: 100px;
+            text-align: center;
+            border-radius: 15px;
+            color: var(--button-text-color);
+        }
+
+
+
+        
+        
+    </style>
+
+</head>
+<body>
+    
+    <div class="card-container">
+        <div class="card">
+            <div class="card-station"><p>Power Smooth Jazz</p></div>
+            <div class="card-logo">
+                <img src="https://cdn.powergroup.com.tr/image/200x200/powerapp/channels/v3/inverse/logo_47.png?v=4" alt="Resim">
+            </div>
+            <div class="card-buttons">
+                <div class="stream-copy">
+                    <button type="copy" onclick="navigator.clipboard.writeText('https://listen.powerapp.com.tr/powersmoothjazz/abr/playlist.m3u8')">Copy Stream</button>
+                </div>
+
+                <div class="stream-go">
+                    <button type="button" onclick="window.open('https://www.powerapp.com.tr/radios/powerjazz/', '_blank')">Live Stream</button> 
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="card">
+            <!-- card -->
+            <div class="card-station"><p>Power XL Extra Lounge</p></div>
+            <div class="card-logo">
+                <img src="https://cdn.powergroup.com.tr/image/200x200/powerapp/channels/v3/inverse/logo_38.png?v=4" alt="Resim">
+            </div>
+                <div class="card-buttons">
+                    <div class="stream-copy">
+                        <button type="copy" onclick="navigator.clipboard.writeText('https://listen.powerapp.com.tr/powerextralounge/abr/playlist.m3u8')">Copy Stream</button>
+                    </div>
+
+                    <div class="stream-go">
+                        <button type="button" onclick="window.open('https://www.powerapp.com.tr/radios/powerxl/', '_blank')" >Live Stream</button> 
+                    </div>
+                </div>
+        </div>
+
+
+
+
+
+        <div class="card">
+            <!-- card -->
+            <div class="card-station"><p>Power Deep</p></div>
+            <div class="card-logo">
+                <img src="https://cdn.powergroup.com.tr/image/200x200/powerapp/channels/v3/inverse/logo_637.png?v=4" alt="Resim">
+            </div>
+                <div class="card-buttons">
+                    <div class="stream-copy">
+                        <button type="copy" onclick="navigator.clipboard.writeText('https://listen.powerapp.com.tr/powerdeep/abr/playlist.m3u8')">Copy Stream</button>
+                    </div>
+
+                    <div class="stream-go">
+                        <button type="button" onclick="window.open('https://www.powerapp.com.tr/radios/powerdeep/', '_blank')" >Live Stream</button> 
+                    </div>
+                </div>
+        </div>
+
+
+
+        <div class="card">
+            <!-- card -->
+            <div class="card-station"><p>Dinamo FM</p></div>
+            <div class="card-logo">
+                <img src="https://dinamo.fm/assets/img/logo.png" alt="Resim">
+            </div>
+                <div class="card-buttons">
+                    <div class="stream-copy">
+                        <button type="copy" onclick="navigator.clipboard.writeText('https://channels.dinamo.fm/legacy-mp3')">Copy Stream</button>
+                    </div>
+
+                    <div class="stream-go">
+                        <button type="button" onclick="window.open('https://dinamo.fm/', '_blank')" >Live Stream</button> 
+                    </div>
+                </div>
+        </div>
+        
+    </div>
+
+
+</body>
+</html>
+
